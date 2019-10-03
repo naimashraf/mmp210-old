@@ -38,10 +38,13 @@ function draw() {
 
 
 	
-	// ears
-	fill("whiote");
-	ellipse(150, 150, 40, 40);
-	ellipse(250, 150, 40, 40);
+	// draw circle at mouse position
+    var x = mouseX;
+    var y = mouseY;
+    
+	fill("white");
+	ellipse(x, y, 40);
+	ellipse(x+87, y, 40);
     
     fill("gray");
 	ellipse(150, 150, 20, 20);
@@ -54,3 +57,5 @@ function draw() {
   arc(200, 150, 150, 100, .9, PI-.9);
   noStroke();
 }
+
+
